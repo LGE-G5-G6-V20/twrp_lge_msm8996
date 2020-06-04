@@ -117,6 +117,8 @@ SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_REC_TYPE := SAR
 SHRP_STATUSBAR_RIGHT_PADDING := 48
 SHRP_STATUSBAR_LEFT_PADDING := 48
+SHRP_EXPRESS := true
+SHRP_DARK := true
 
 # Ignore LG's bootloader wipe commands
 TW_IGNORE_MISC_WIPE_DATA := true
