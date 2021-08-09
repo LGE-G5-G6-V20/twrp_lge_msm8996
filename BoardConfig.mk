@@ -62,8 +62,7 @@ BOARD_KERNEL_TAGS_OFFSET := 0x02000000
 BOARD_RAMDISK_OFFSET     := 0x02200000
 
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -104,22 +103,22 @@ TARGET_USES_LOGD := true
 PLATFORM_SECURITY_PATCH := 2019-01-05
 
 # SkyHawk Recovery
-SHRP_PATH := device/lge/h870
-SHRP_MAINTAINER := dom133
-SHRP_DEVICE_CODE := H870
-SHRP_EDL_MODE := 0
-SHRP_EXTERNAL := /external_sd
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_FONP_1 := /sys/class/leds/led:torch_0
-SHRP_FONP_2 := /sys/class/leds/led:switch
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_REC_TYPE := SAR
-SHRP_STATUSBAR_RIGHT_PADDING := 48
-SHRP_STATUSBAR_LEFT_PADDING := 48
-SHRP_EXPRESS := true
-SHRP_DARK := true
+# SHRP_PATH := device/lge/h870
+# SHRP_MAINTAINER := dom133
+# SHRP_DEVICE_CODE := H870
+# SHRP_EDL_MODE := 0
+# SHRP_EXTERNAL := /external_sd
+# SHRP_INTERNAL := /sdcard
+# SHRP_OTG := /usb_otg
+# SHRP_FLASH := 1
+# SHRP_FONP_1 := /sys/class/leds/led:torch_0
+# SHRP_FONP_2 := /sys/class/leds/led:switch
+# SHRP_REC := /dev/block/bootdevice/by-name/recovery
+# SHRP_REC_TYPE := SAR
+# SHRP_STATUSBAR_RIGHT_PADDING := 48
+# SHRP_STATUSBAR_LEFT_PADDING := 48
+# SHRP_EXPRESS := true
+# SHRP_DARK := true
 
 # Ignore LG's bootloader wipe commands
 TW_IGNORE_MISC_WIPE_DATA := true
