@@ -75,6 +75,7 @@ TW_IGNORE_MISC_WIPE_DATA := true
 # Shift TWRP off the secondary screen
 #top
 #TW_Y_OFFSET := 35
+TW_NO_REBOOT_RECOVERY := true
 
 #Bottom
 #TW_H_OFFSET := -35
