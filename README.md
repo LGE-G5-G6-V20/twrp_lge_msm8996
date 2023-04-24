@@ -5,7 +5,8 @@ Add to `.repo/local_manifests/h918.xml`:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<project path="device/lge/h918" name="android_device_lge_h918" remote="TeamWin" revision="android-6.0" />
+	<remote name="LGE-G5-G6-V20" fetch="https://github.com/LGE-G5-G6-V20"/>
+	<project path="device/lge/h918" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/h918" />
 </manifest>
 ```
 
@@ -13,11 +14,10 @@ Then run `repo sync` to check it out.
 
 To build:
 
-```sh
+```
 . build/envsetup.sh
 lunch omni_h918-eng
-make -j5 recoveryimage
+mka recoveryimage
 ```
 
-Kernel sources are available at: https://github.com/jcadduono/android_kernel_lge_msm8996/tree/twrp-7.0
-
+Kernel sources are available at: https://github.com/LineageOS/android_kernel_lge_msm8996
