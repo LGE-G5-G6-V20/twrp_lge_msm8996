@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<remote name="LGE-G5-G6-V20" fetch="https://github.com/LGE-G5-G6-V20"/>
+	
+	<project path="device/lge/h830" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g5/h830" />
+	<project path="device/lge/h850" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g5/h850" />
+	<project path="device/lge/rs988" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g5/rs988" />
+	
+	<project path="device/lge/h870" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g6/h870" />
+	<project path="device/lge/h872" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g6/h872" />
+	<project path="device/lge/us997" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="g6/us997" />
+	
+	<project path="device/lge/h910" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/h910" />
+	<project path="device/lge/h918" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/h918" />
+	<project path="device/lge/h990" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/h990" />
+	<project path="device/lge/ls997" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/ls997" />
+	<project path="device/lge/us996" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/us996" />
+	<project path="device/lge/vs995" name="twrp_lge_msm8996" remote="LGE-G5-G6-V20" revision="v20/vs995" />
+	
+</manifest>

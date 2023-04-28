@@ -28,3 +28,17 @@ This project was created before python2 was deprecated and will not build with p
 Then to build for a device with recovery partition:
 
      cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch omni_<device>-eng; mka recoveryimage
+
+## All in one script ##
+-----
+
+This script will get TWRP, minimal Omni sources (based on Android 9) and setup a single manifest including all LGE msm8996 devices.
+Individual manifests are also available on each branch.
+
+     sudo apt install -y wget;
+     mkdir twrp-9.0 && cd twrp-9.0;
+     repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0;
+     mkdir -p .repo/local_manifests && cd .repo/local_manifests && wget https://raw.githubusercontent.com/LGE-G5-G6-V20/twrp_lge_msm8996/main/twrp_lge_msm8996.xml && cd ../../;
+     repo sync -j32;
+     . build/envsetup.sh; make clean;
+     echo -e "\nTrees and TWRP sources ready. You can run lunch omni_<device>-eng; mka recoveryimage\n";
